@@ -164,7 +164,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
+<<<<<<< HEAD
   controlID: 81
+=======
+  controlID: 108
+>>>>>>> f1d16c0c152f7435f0ba07e4da88e9fa6db86c78
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,7 +273,11 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 174}
   m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
+<<<<<<< HEAD
   controlID: 126
+=======
+  controlID: 77
+>>>>>>> f1d16c0c152f7435f0ba07e4da88e9fa6db86c78
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -433,7 +441,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 8a530000
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 76d6ffff
+=======
+      m_ExpandedIDs: 68d5ffff72d6ffff
+>>>>>>> f1d16c0c152f7435f0ba07e4da88e9fa6db86c78
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -607,6 +619,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: E:\game engines semester 3\Tower-Defence-Game\TowerDefence
   m_LockTracker:
     m_IsLocked: 0
@@ -615,6 +628,16 @@ MonoBehaviour:
     m_SelectedIDs: f83f0000
     m_LastClickedID: 16376
     m_ExpandedIDs: 00000000383f000000ca9a3b
+=======
+  m_LastProjectPath: C:\Users\7oq00\Desktop\Group Project\Tower-Defence-Game\TowerDefence
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 22}
+    m_SelectedIDs: fe3f0000
+    m_LastClickedID: 16382
+    m_ExpandedIDs: 000000003e3f0000fe3f0000584100006e41000000ca9a3b
+>>>>>>> f1d16c0c152f7435f0ba07e4da88e9fa6db86c78
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -642,7 +665,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000383f0000
+=======
+    m_ExpandedIDs: 000000003e3f0000
+>>>>>>> f1d16c0c152f7435f0ba07e4da88e9fa6db86c78
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
