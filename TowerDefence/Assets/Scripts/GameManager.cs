@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
+    //
+    public static GameManager Instance;
+    //
+    public int gold;
     // Start is called before the first frame update
     void Start()
     {
