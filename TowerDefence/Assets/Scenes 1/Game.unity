@@ -1209,7 +1209,8 @@ MonoBehaviour:
   towerPieceToAim: {fileID: 226624233}
   targetEnemy: {fileID: 0}
   attackCounter: 0
-  stonePrefab: {fileID: 0}
+  stonePrefab: {fileID: 1000012378032816, guid: ea3db759f8d834de0a42a0c7c78b8461,
+    type: 3}
 --- !u!1 &226913895
 GameObject:
   m_ObjectHideFlags: 0
