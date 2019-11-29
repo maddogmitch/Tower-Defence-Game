@@ -551,6 +551,7 @@ GameObject:
   - component: {fileID: 114993568}
   - component: {fileID: 114993567}
   - component: {fileID: 114993569}
+  - component: {fileID: 114993570}
   m_Layer: 0
   m_Name: AddTowerWindow
   m_TagString: Untagged
@@ -648,6 +649,19 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &114993570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114993565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315168a7462d6a94cb48bd4da3e2ea77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerSlotToAddTowerTo: {fileID: 1777455503}
 --- !u!1 &125744509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1305,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114993570}
         m_MethodName: AddTower
         m_Mode: 5
         m_Arguments:
@@ -2347,6 +2361,7 @@ Transform:
   - {fileID: 509835462}
   - {fileID: 757061559}
   - {fileID: 522169112}
+  - {fileID: 2133849171}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3486,7 +3501,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114993570}
         m_MethodName: AddTower
         m_Mode: 5
         m_Arguments:
@@ -4740,7 +4755,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114993570}
         m_MethodName: AddTower
         m_Mode: 5
         m_Arguments:
@@ -5615,6 +5630,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23756d8718572404c815ca721344b12d, type: 3}
+--- !u!1 &1777455503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010820271704, guid: 23756d8718572404c815ca721344b12d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1777455502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1819684037
 GameObject:
   m_ObjectHideFlags: 0
@@ -6564,6 +6585,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078960267}
   m_CullTransparentMesh: 0
+--- !u!1 &2133849170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2133849171}
+  - component: {fileID: 2133849172}
+  m_Layer: 0
+  m_Name: TowerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2133849171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133849170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.197095, y: 19.315588, z: 7.2042303}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 464782391}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2133849172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133849170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc1619dc720f044290da885412f1129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stoneTowerPrefab: {fileID: 1000012973691242, guid: 5a47045c1e027f64cb0bc4809abf9f07,
+    type: 3}
+  fireTowerPrefab: {fileID: 1000012864226544, guid: 8b509d66d3dc3b146a4c70e14bb90bc4,
+    type: 3}
+  iceTowerPrefab: {fileID: 1000012819307948, guid: a13c986921726fb45a55b0ed82c536ac,
+    type: 3}
+  TowerCosts:
+  - TowerType: 0
+    Cost: 100
+  - TowerType: 1
+    Cost: 200
+  - TowerType: 2
+    Cost: 150
 --- !u!1 &2140814640
 GameObject:
   m_ObjectHideFlags: 0
