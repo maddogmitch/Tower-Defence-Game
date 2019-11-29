@@ -26,7 +26,7 @@ public class WaveManager : MonoBehaviour
     {
         foreach (EnemyWave enemyWave in enemyWaves)
         {
-            if (!activatedWaves.Contains(enemyWave) 
+            if (!activatedWaves.Contains(enemyWave)
                 && enemyWave.startSpawnTimeInSeconds <= elapsedTime)
             {
                 activeWave = enemyWave;
