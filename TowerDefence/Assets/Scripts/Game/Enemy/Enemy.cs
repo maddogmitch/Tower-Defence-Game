@@ -93,7 +93,12 @@ public class Enemy : MonoBehaviour
         transform.position = Vector3.MoveTowards
                  (transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
+<<<<<<< HEAD
         transform.localRotation = AutoScaler.SmoothlyLook(transform, targetPosition);
+=======
+        transform.localRotation = AutoScaler.
+        SmoothlyLook(transform, targetPosition);
+>>>>>>> fceffb06cfc2625364f20fa095986c41f2adbae1
 
         if (Vector3.Distance(transform.position, targetPosition) < .1f)
         {
