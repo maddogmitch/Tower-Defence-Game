@@ -41,6 +41,11 @@ public class Enemy : MonoBehaviour
 
     private int wayPointIndex = 0;
 
+    void Start()
+    {
+        EnemyManager.Instance.RegisterEnemy(this);
+    }
+
     void OnGotToLastWayPoint()
     {
         Die();
@@ -61,7 +66,10 @@ public class Enemy : MonoBehaviour
     {
         if (gameObject != null)
         {
-            Destroy(gameObject);
+            EnemyManager.Instance.UnRegister(this);
+            gameObject.AddComponent<AutoScaler>().scaleSpeed = -2;
+            enabled = false;
+            Destroy(gameObject, 0.3f);
         }
     }
 
@@ -80,14 +88,17 @@ public class Enemy : MonoBehaviour
     private void UpdateMovement()
     {
         Vector3 targetPosition = 
-            WayPointManager.Instance.Paths[pathIndex]
-            .WayPoints[wayPointIndex].position;
+            WayPointManager.Instance.Paths[pathIndex].WayPoints[wayPointIndex].position;
 
         transform.position = Vector3.MoveTowards
-            (transform.position, targetPosition, 
-             moveSpeed * Time.deltaTime);
+                 (transform.position, targetPosition, moveSpeed * Time.deltaTime);
 
-        transform.LookAt(targetPosition);
+
+        transform.localRotation = AutoScaler.SmoothlyLook(transform, targetPosition);
+
+        transform.localRotation = AutoScaler.
+        SmoothlyLook(transform, targetPosition);
+
 
         if (Vector3.Distance(transform.position, targetPosition) < .1f)
         {
