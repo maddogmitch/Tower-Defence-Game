@@ -32,6 +32,8 @@ public class WaveManager : MonoBehaviour
                 activeWave = enemyWave;
                 activatedWaves.Add(enemyWave);
                 spawnCounter = 0f;
+                //adds 1 to the wave number
+                GameManager.Instance.waveNumber++;
 
                 break;
             }
@@ -64,7 +66,8 @@ public class WaveManager : MonoBehaviour
 
                     if (activatedWaves.Count == enemyWaves.Count)
                     {
-
+                        //sets spawning to true so we know to start spawning
+                        GameManager.Instance.enemySpawningOver = true;
                     }
                 }
             }
