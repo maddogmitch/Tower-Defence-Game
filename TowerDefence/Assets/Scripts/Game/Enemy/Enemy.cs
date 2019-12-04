@@ -47,8 +47,7 @@ public class Enemy : MonoBehaviour
     }
 
     void OnGotToLastWayPoint()
-    {   //notify game manager a enemy escaped
-        GameManager.Instance.OnEnemyEscape();
+    {
         Die();
     }
 
@@ -58,17 +57,8 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
-            //when a enemy dies call the drop gold function
-            DropGold();
             Die();
         }
-    }
-
-
-    void DropGold()
-    {
-        //give the player some gold whebn a enemy dies of a attack
-        GameManager.Instance.gold += goldDrop;
     }
 
 
