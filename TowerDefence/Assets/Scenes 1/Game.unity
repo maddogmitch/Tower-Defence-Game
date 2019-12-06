@@ -2790,9 +2790,14 @@ MonoBehaviour:
   winGameWindow: {fileID: 1868847988}
   loseGameWindow: {fileID: 766434015}
   blackBackground: {fileID: 1853779991}
+  centerWindow: {fileID: 303642381}
+  damageCanvas: {fileID: 1384947502}
   txtGold: {fileID: 1360237430}
   txtWave: {fileID: 1384353174}
   txtEscapedEnemies: {fileID: 1517282190}
+  enemyHealthBars: {fileID: 426373307}
+  enemyHealthBarPrefab: {fileID: 1000013260251260, guid: 675fe109f23546d40876f30b27e9c8f3,
+    type: 3}
 --- !u!1 &766434015
 GameObject:
   m_ObjectHideFlags: 0
