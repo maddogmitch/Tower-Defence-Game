@@ -4787,6 +4787,7 @@ GameObject:
   - component: {fileID: 82000012449769350}
   - component: {fileID: 65000010296972936}
   - component: {fileID: 114000010241208920}
+  - component: {fileID: 4537570805687950557}
   m_Layer: 0
   m_Name: FireTower
   m_TagString: Untagged
@@ -4950,3 +4951,26 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &4537570805687950557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012864226544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ceb5d39e0cf15346901b2b388a74ed7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPower: 12
+  timeBetweenAttacksInSeconds: 3
+  aggroRadius: 8
+  towerLevel: 1
+  type: 1
+  shootSound: {fileID: 8300000, guid: dc35f53afef8d124bae31b2d021cb642, type: 3}
+  towerPieceToAim: {fileID: 0}
+  targetEnemy: {fileID: 0}
+  attackCounter: 0
+  fireParticlesPrefab: {fileID: 1000012884060136, guid: 65f96378677d3402fb14c5021c4db4e2,
+    type: 3}
