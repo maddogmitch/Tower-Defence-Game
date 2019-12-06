@@ -2073,7 +2073,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 702011779}
         m_MethodName: RetryLevel
         m_Mode: 1
         m_Arguments:
@@ -2787,6 +2787,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   addTowerWindow: {fileID: 114993565}
   towerInfoWindow: {fileID: 2053448799}
+  winGameWindow: {fileID: 1868847988}
+  loseGameWindow: {fileID: 766434015}
+  blackBackground: {fileID: 1853779991}
   txtGold: {fileID: 1360237430}
   txtWave: {fileID: 1384353174}
   txtEscapedEnemies: {fileID: 1517282190}
@@ -4988,7 +4991,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 702011779}
         m_MethodName: RetryLevel
         m_Mode: 1
         m_Arguments:
@@ -6235,7 +6238,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 702011779}
         m_MethodName: QuitToTitleScreen
         m_Mode: 1
         m_Arguments:
@@ -6461,7 +6464,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 702011779}
         m_MethodName: QuitToTitleScreen
         m_Mode: 1
         m_Arguments:

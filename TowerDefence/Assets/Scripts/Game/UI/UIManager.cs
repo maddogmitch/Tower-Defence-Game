@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour
 
     public GameObject addTowerWindow;
     public GameObject towerInfoWindow;
+    public GameObject winGameWindow;
+    public GameObject loseGameWindow;
+    public GameObject blackBackground;
 
     public Text txtGold;
     public Text txtWave;
@@ -46,5 +49,16 @@ public class UIManager : MonoBehaviour
         towerInfoWindow.GetComponent<TowerInfoWindow>().tower = tower;
         towerInfoWindow.SetActive(true);
         UtilityMethods.MoveUiElementToWorldPosition(towerInfoWindow.GetComponent<RectTransform>(), tower.transform.position);
+    }
+
+    public void ShowWinScreen()
+    {
+        blackBackground.SetActive(true);
+        winGameWindow.SetActive(true);
+    }
+    public void ShowLoseScreen()
+    {
+        blackBackground.SetActive(true);
+        loseGameWindow.SetActive(true);
     }
 }
