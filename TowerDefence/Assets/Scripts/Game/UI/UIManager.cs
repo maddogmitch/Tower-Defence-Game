@@ -76,7 +76,7 @@ public class UIManager : MonoBehaviour
 
     public void ShowCenterWindow(string text)
     {
-        centerWindow.transform.FindChild("TxtWave").GetComponent<Text>().text = text; StartCoroutine(EnableAndDisableCenterWindow());
+        centerWindow.transform.Find("TxtWave").GetComponent<Text>().text = text; StartCoroutine(EnableAndDisableCenterWindow());
     }
 
     private IEnumerator EnableAndDisableCenterWindow()
